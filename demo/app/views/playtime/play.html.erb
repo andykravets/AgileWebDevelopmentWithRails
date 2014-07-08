@@ -4,10 +4,17 @@
 </head>
 <body>
 <h1>Basic playtime file!</h1>
+
 <p>
     Addition: <%= 1+2 %> <br/>
     Concatenation: <%= 'cow' + 'boy' %> <br/>
     Time in one hour: <%= 1.hour.from_now %>
+</p>
+
+<p>
+    <% @files.each do |file| %>
+        Current filename is: <%= file %><br/>
+    <% end %>
 </p>
 </body>
 </html>
